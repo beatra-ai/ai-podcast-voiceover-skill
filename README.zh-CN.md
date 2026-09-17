@@ -14,9 +14,13 @@
 | **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
 | **支持的 Agent** | Claude Code、Codex、OpenClaw |
 
+<p align="center"><img src="assets/cover.webp" width="800" alt="虚构的单人播客《The Small Studio Show》的封面，节目主题是把业余项目做完上线。由 Beatra AI 生成。"></p>
+
+*虚构的单人播客《The Small Studio Show》的封面，节目主题是把业余项目做完上线。由 Beatra AI 生成。*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.1.6 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.1.7 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover) 自动发布，问题请到那里反馈。
 
@@ -40,6 +44,30 @@ gh skill install beatra-ai/ai-podcast-voiceover-skill ai-podcast-voiceover
 
 ```text
 从 https://github.com/beatra-ai/ai-podcast-voiceover-skill 安装 ai-podcast-voiceover skill（目录 skills/ai-podcast-voiceover），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 效果示例
+
+<p align="center"><img src="assets/cover.webp" width="800" alt="虚构的单人播客《The Small Studio Show》的封面，节目主题是把业余项目做完上线。由 Beatra AI 生成。"></p>
+
+[▶ 试听（MP3）](assets/sample.mp3)
+
+*《The Small Studio Show》第 12 集，一位主持人用 50 秒讲为什么业余项目需要一个周五截止日，脚本改写自一份简短笔记。由 Beatra AI 生成。*
+
+提示词：
+
+```text
+Welcome to The Small Studio Show. This is Episode twelve: why your side project needs a Friday deadline.
+
+Most side projects don't die from bad ideas. They die from "someday."
+
+So here's my point. Pick one small, shippable piece, and give it a deadline: this Friday, five p.m. Not a launch. Just one thing a real person can see. A landing page. A demo video. A working sign-up form.
+
+Why Friday? A week is short enough to feel urgent, and long enough to finish something real. When Friday comes, ship what you have, even if it's rough.
+
+Your takeaway: next Monday, write down one Friday deliverable, and tell one friend.
+
+That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
 ## 你能得到什么

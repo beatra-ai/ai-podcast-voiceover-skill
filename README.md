@@ -14,9 +14,13 @@ Turn an article, notes, or a finished script into a solo podcast episode with a 
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Codex, OpenClaw |
 
+<p align="center"><img src="assets/cover.webp" width="800" alt="Cover art for The Small Studio Show, a fictional solo podcast about shipping side projects. AI-generated with Beatra."></p>
+
+*Cover art for The Small Studio Show, a fictional solo podcast about shipping side projects. AI-generated with Beatra.*
+
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.1.6 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.1.7 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover). Report issues there.
 
@@ -41,6 +45,30 @@ Or paste this into your agent:
 
 ```text
 Install the ai-podcast-voiceover skill from https://github.com/beatra-ai/ai-podcast-voiceover-skill (folder skills/ai-podcast-voiceover), then follow its SKILL.md to connect my Beatra account.
+```
+
+## Examples
+
+<p align="center"><img src="assets/cover.webp" width="800" alt="Cover art for The Small Studio Show, a fictional solo podcast about shipping side projects. AI-generated with Beatra."></p>
+
+[▶ Listen (MP3)](assets/sample.mp3)
+
+*Episode 12 of The Small Studio Show, a 50-second solo episode read by one host voice from a short script about giving side projects a Friday deadline. AI-generated with Beatra.*
+
+Prompt:
+
+```text
+Welcome to The Small Studio Show. This is Episode twelve: why your side project needs a Friday deadline.
+
+Most side projects don't die from bad ideas. They die from "someday."
+
+So here's my point. Pick one small, shippable piece, and give it a deadline: this Friday, five p.m. Not a launch. Just one thing a real person can see. A landing page. A demo video. A working sign-up form.
+
+Why Friday? A week is short enough to feel urgent, and long enough to finish something real. When Friday comes, ship what you have, even if it's rough.
+
+Your takeaway: next Monday, write down one Friday deliverable, and tell one friend.
+
+That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
 ## What you get
