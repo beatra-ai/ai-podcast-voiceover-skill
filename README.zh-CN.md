@@ -1,0 +1,79 @@
+# AI Podcast Voiceover Skill
+
+[English](./README.md) | 简体中文
+
+把文章、公众号长文、笔记或定稿做成自然流畅的单人播客口播，固定主播音色，交付可用于发布的 MP3 单集音频，在 Claude Code、Codex 或 OpenClaw 里直接完成。
+
+> [!IMPORTANT]
+> 生成需要 [Beatra](https://beatra.ai) 账号并消耗积分，安装本身不收费。
+
+| 问题 | 回答 |
+| --- | --- |
+| **能做什么** | 把文章、公众号长文、笔记或定稿整理成自然流畅的单人播客口播，固定主播音色，交付可用于发布的MP3单集音频。 |
+| **运行要求** | Python 3.10+，以及能加载 `SKILL.md` 的 Agent |
+| **费用** | 安装免费。每次生成消耗 Beatra 账号积分，只有你明确要求这次生成或批准确认卡后才会付费。 |
+| **支持的 Agent** | Claude Code、Codex、OpenClaw |
+
+| Skill | Entry point | Version |
+| --- | --- | --- |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.1.6 |
+
+本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover) 自动发布，问题请到那里反馈。
+
+## 安装
+
+使用 [`skills`](https://skills.sh) CLI：
+
+```bash
+npx skills add beatra-ai/ai-podcast-voiceover-skill
+```
+
+使用 GitHub CLI：
+
+```bash
+gh skill install beatra-ai/ai-podcast-voiceover-skill ai-podcast-voiceover
+```
+
+也可以克隆本仓库，把 `skills/ai-podcast-voiceover` 复制到 `~/.claude/skills/`（Claude Code）、`~/.agents/skills/`（Codex）或 `~/.openclaw/skills/`（OpenClaw）。
+
+或者把下面这段话发给你的 Agent：
+
+```text
+从 https://github.com/beatra-ai/ai-podcast-voiceover-skill 安装 ai-podcast-voiceover skill（目录 skills/ai-podcast-voiceover），然后按它的 SKILL.md 连接我的 Beatra 账号。
+```
+
+## 你能得到什么
+
+- **让文字更适合听** — 把文章、笔记和定稿整理为带有清晰过渡、自然节奏和听众友好结构的播客脚本。
+- **延续节目主播感** — 选择适合栏目的当前音色，处理人名和术语读法，并把节目方向延续到后续单集。
+- **清楚整理每一集** — 把脚本、主播方向、读音记录和单集重点整理为一份适合听众的播客制作简报。
+
+## 适用场景
+
+- **文章转播客音频** — 把文章、公众号长文或研究笔记整理为从开场到收尾都便于聆听的播客单集。
+- **新闻与知识解说** — 为新闻评论、专业分析和知识栏目选择稳定的主播声音，清楚呈现人名、数字和专业术语。
+- **个人与品牌系列** — 为持续更新的观点、教育和创始人栏目建立熟悉的主播方向，让每一集保持节目感。
+- **节目预告和开场** — 制作简洁的预告、开场和固定收尾音频，让栏目在不同单集之间拥有连贯的声音。
+
+## 常见问题
+
+### AI播客配音可以制作什么？
+
+它把已有文章、笔记、大纲和定稿整理成适合聆听的单人播客单集，包含主播音色、自然节奏、清晰读音和MP3单集音频。
+
+### 系列节目可以延续同一主播音色吗？
+
+可以。先为节目选择主播方向，后续单集可以沿用音色、语言、表达设置、开场、收尾和读音记录。
+
+### 哪些内容适合做成播客单集？
+
+文章、公众号长文、研究笔记、专业解说、节目大纲和定稿都适合作为整理成播客单集的起点。
+
+## 更新
+
+安装后的 skill 每天最多检查一次新版本，替换前先校验官方归档，任何一步失败都不会动你已安装的版本。
+随时可以关闭，见 skill 内的 `references/automatic-updates-and-safety.md`。
+
+## 许可证
+
+[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
