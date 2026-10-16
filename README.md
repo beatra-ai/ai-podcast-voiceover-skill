@@ -79,6 +79,15 @@ As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
 - **Text to music** — 2 models (Suno 6, MiniMax Music 3.0); lyrics up to 5000 characters
 - **Reference audio to music** — 2 models (Suno 6, MiniMax Music 3.0); lyrics up to 5000 characters
 
+## Why use Beatra instead of calling model APIs directly
+
+- **One account for every model this skill uses** — Text to speech 2; Text to music 2; Reference audio to music 2 (as of 2026-10-16), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
+- **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
+- **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
+- **Updates you control** — no self-updater; update with the tool you installed it with.
+- **Runs in your agent** — Claude Code, Codex, OpenClaw.
+
 ## What you get
 
 - **Make source material easy to hear** — Turn articles, notes, and finished writing into a spoken episode with clear transitions, natural rhythm, and listener-friendly structure.
@@ -124,3 +133,4 @@ ClawHub.
 - Website — https://beatra.ai
 - Docs — https://docs.beatra.ai
 - Console — https://console.beatra.ai
+- For AI agents — https://beatra.ai/llms.txt (index) · https://beatra.ai/llms-full.txt (every skill in one file)
