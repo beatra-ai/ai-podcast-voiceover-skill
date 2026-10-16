@@ -20,7 +20,7 @@ Turn an article, notes, or a finished script into a solo podcast episode with a 
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.3 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.4 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover). Report issues there.
 
@@ -71,6 +71,14 @@ Your takeaway: next Monday, write down one Friday deliverable, and tell one frie
 That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
+## Specs
+
+As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
+
+- **Text to speech** — 2 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo); FLAC, MP3, OPUS, PCM, WAV; 40 languages; up to 44.1 kHz; up to 50000 characters per request
+- **Text to music** — 2 models (Suno 6, MiniMax Music 3.0); lyrics up to 5000 characters
+- **Reference audio to music** — 2 models (Suno 6, MiniMax Music 3.0); lyrics up to 5000 characters
+
 ## What you get
 
 - **Make source material easy to hear** — Turn articles, notes, and finished writing into a spoken episode with clear transitions, natural rhythm, and listener-friendly structure.
@@ -110,3 +118,9 @@ Details: `references/updates-and-security.md` inside the skill.
 [MIT-0](LICENSE) — free to use, modify, and redistribute, including
 commercially. No attribution required. Same terms as these skills carry on
 ClawHub.
+
+## Links
+
+- Website — https://beatra.ai
+- Docs — https://docs.beatra.ai
+- Console — https://console.beatra.ai

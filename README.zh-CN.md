@@ -20,7 +20,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.3 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.4 |
 
 本仓库由 [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover) 自动发布，问题请到那里反馈。
 
@@ -70,6 +70,14 @@ Your takeaway: next Monday, write down one Friday deliverable, and tell one frie
 That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
+## 规格
+
+截至 2026-10-16。实时列表：https://docs.beatra.ai/zh/docs/models
+
+- **语音合成** — 2 个模型（MiniMax Speech 2.8 HD、MiniMax Speech 2.8 Turbo）；FLAC、MP3、OPUS、PCM、WAV；40 种语言；最高 44.1 kHz；单次最多 50000 字符
+- **文生音乐** — 2 个模型（Suno 6、MiniMax Music 3.0）；歌词最多 5000 字符
+- **参考音频生音乐** — 2 个模型（Suno 6、MiniMax Music 3.0）；歌词最多 5000 字符
+
 ## 你能得到什么
 
 - **让文字更适合听** — 把文章、笔记和定稿整理为带有清晰过渡、自然节奏和听众友好结构的播客脚本。
@@ -106,3 +114,13 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 ## 许可证
 
 [MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+
+## 相关链接
+
+- 官网 — https://www.beatra.cn
+- 文档 — https://docs.beatra.cn
+- 控制台 — https://console.beatra.cn
+
+- 微信小程序 — 国内用户微信扫码使用
+
+<img src="assets/beatra-mini-program-qr.jpg" alt="Beatra 微信小程序码" width="160">
