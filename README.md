@@ -2,7 +2,7 @@
 
 English | [简体中文](./README.zh-CN.md)
 
-Turn an article, notes, or a finished script into a solo podcast episode with a consistent host voice, natural pacing, pronunciation control, and an MP3 you can publish, from inside Claude Code, Codex, or OpenClaw.
+Turn an article, notes, or a finished script into a solo podcast episode with a consistent host voice, natural pacing, pronunciation control, and an MP3 you can publish, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
 > [!IMPORTANT]
 > Rendering needs a [Beatra](https://beatra.ai) account and uses credits. The skill itself is free to install.
@@ -10,9 +10,10 @@ Turn an article, notes, or a finished script into a solo podcast episode with a 
 | Question | Answer |
 | --- | --- |
 | **What it does** | Turn an article, notes, or finished script into a listenable solo podcast episode with a consistent host voice, natural pacing, pronunciation control, and MP3 delivery. |
+| **Models** | MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Suno 6, MiniMax Music 3.0 |
 | **Requirements** | Python 3.10+ and an agent that loads `SKILL.md` |
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
-| **Works with** | Claude Code, Codex, OpenClaw |
+| **Works with** | Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw |
 
 <p align="center"><img src="assets/cover.webp" width="800" alt="Cover art for The Small Studio Show, a fictional solo podcast about shipping side projects. AI-generated with Beatra."></p>
 
@@ -20,7 +21,7 @@ Turn an article, notes, or a finished script into a solo podcast episode with a 
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.4 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.5 |
 
 This repository is published automatically from [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover). Report issues there.
 
@@ -39,7 +40,8 @@ gh skill install beatra-ai/ai-podcast-voiceover-skill ai-podcast-voiceover
 ```
 
 Or clone this repository and copy `skills/ai-podcast-voiceover` into `~/.claude/skills/` for Claude Code,
-`~/.agents/skills/` for Codex, or `~/.openclaw/skills/` for OpenClaw.
+`~/.cursor/skills/` for Cursor, `~/.agents/skills/` for Codex, `~/.codeium/windsurf/skills/` for Windsurf,
+`~/.cline/skills/` for Cline, or `~/.openclaw/skills/` for OpenClaw.
 
 Or paste this into your agent:
 
@@ -73,7 +75,7 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ## Technical Specifications & Output Limits
 
-As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
+As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 - **Uploads** — up to 100 MB per file; the per-model input limits below also apply
 - **Text to speech** — 2 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo); FLAC, MP3, OPUS, PCM, WAV; 40 languages; sample rates 8, 16, 22.05, 24, 32, 44.1 kHz; up to 50000 characters per request
@@ -87,12 +89,12 @@ As of 2026-10-16. Live list: https://docs.beatra.ai/en/docs/models
 
 ## Why use Beatra instead of calling model APIs directly
 
-- **One account for every model this skill uses** — Text to speech 2; Text to music 2; Reference audio to music 2 (as of 2026-10-16), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **One account for every model this skill uses** — Text to speech 2; Text to music 2; Reference audio to music 2 (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Suno 6, MiniMax Music 3.0) (as of 2026-10-18), behind one Beatra sign-in; no keys from individual model providers to manage.
 - **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
 - **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
 - **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
 - **Updates you control** — no self-updater; update with the tool you installed it with.
-- **Runs in your agent** — Claude Code, Codex, OpenClaw.
+- **Runs in your agent** — Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw.
 
 ## What you get
 
