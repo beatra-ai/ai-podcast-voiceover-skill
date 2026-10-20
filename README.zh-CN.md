@@ -1,6 +1,8 @@
 # AI Podcast Voiceover Skill
 
-[English](./README.md) | 简体中文
+[English](./README.md) | 简体中文 | [日本語](./README.ja.md)
+
+> 👉 也看看 [AI Audiobook Generator Skill](https://github.com/beatra-ai/ai-audiobook-generator-skill)
 
 把文章、公众号长文、笔记或定稿做成自然流畅的单人播客口播，固定主播音色，交付可用于发布的 MP3 单集音频，在 Claude Code、Cursor、Codex、Windsurf、Cline 或 OpenClaw 里直接完成。
 
@@ -54,6 +56,12 @@ gh skill install beatra-ai/ai-podcast-voiceover-skill ai-podcast-voiceover
 [▶ 试听（MP3）](assets/sample.mp3)
 
 *《The Small Studio Show》第 12 集，一位主持人用 50 秒讲为什么业余项目需要一个周五截止日，脚本改写自一份简短笔记。由 Beatra AI 生成。*
+
+在你的 Agent 里这样说：
+
+```text
+把 ./episode-12-script.md 做成 The Small Studio Show 的第 12 期：用同一个主持人声音，语速自然像聊天，给我一个可以直接发布的 MP3。
+```
 
 提示词：
 

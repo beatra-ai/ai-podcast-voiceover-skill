@@ -1,6 +1,8 @@
 # AI Podcast Voiceover Skill
 
-English | [简体中文](./README.zh-CN.md)
+English | [简体中文](./README.zh-CN.md) | [日本語](./README.ja.md)
+
+> 👉 See also [AI Audiobook Generator Skill](https://github.com/beatra-ai/ai-audiobook-generator-skill)
 
 Turn an article, notes, or a finished script into a solo podcast episode with a consistent host voice, natural pacing, pronunciation control, and an MP3 you can publish, from inside Claude Code, Cursor, Codex, Windsurf, Cline, or OpenClaw.
 
@@ -56,6 +58,12 @@ Install the ai-podcast-voiceover skill from https://github.com/beatra-ai/ai-podc
 [▶ Listen (MP3)](assets/sample.mp3)
 
 *Episode 12 of The Small Studio Show, a 50-second solo episode read by one host voice from a short script about giving side projects a Friday deadline. AI-generated with Beatra.*
+
+Ask your agent:
+
+```text
+Turn ./episode-12-script.md into episode 12 of The Small Studio Show: one consistent host voice, conversational pacing, and give me an MP3 I can publish.
+```
 
 Prompt:
 
