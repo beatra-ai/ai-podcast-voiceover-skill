@@ -35,6 +35,33 @@
 npx skills add beatra-ai/ai-podcast-voiceover-skill
 ```
 
+Claude Code プラグインとして：
+
+```bash
+claude plugin marketplace add beatra-ai/ai-podcast-voiceover-skill
+claude plugin install ai-podcast-voiceover@ai-podcast-voiceover-skill
+```
+
+Codex プラグインとして：
+
+```bash
+codex plugin marketplace add beatra-ai/ai-podcast-voiceover-skill
+codex plugin add ai-podcast-voiceover@ai-podcast-voiceover-skill
+```
+
+GitHub Copilot CLI プラグインとして：
+
+```bash
+copilot plugin marketplace add beatra-ai/ai-podcast-voiceover-skill
+copilot plugin install ai-podcast-voiceover@ai-podcast-voiceover-skill
+```
+
+Gemini CLI 拡張機能として：
+
+```bash
+gemini extensions install https://github.com/beatra-ai/ai-podcast-voiceover-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
