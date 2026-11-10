@@ -62,6 +62,12 @@ copilot plugin install ai-podcast-voiceover@ai-podcast-voiceover-skill
 gemini extensions install https://github.com/beatra-ai/ai-podcast-voiceover-skill
 ```
 
+作为 Antigravity CLI 插件：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-podcast-voiceover-skill
+```
+
 使用 GitHub CLI：
 
 ```bash
@@ -106,6 +112,15 @@ Your takeaway: next Monday, write down one Friday deliverable, and tell one frie
 That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
+## 输入与输出
+
+| | 类型 | 格式 | 规格 |
+| --- | --- | --- | --- |
+| **输入** | 文本：文章、笔记或讲稿 | — | — |
+| **输出** | 音频：同一主播音色播读的单人播客单集 | MP3 | 40 种语言 |
+| **输出** | 音频：背景音乐（可选） | MP3 | 单次 1 段 |
+| **输出** | 文本：适合聆听的播客脚本 | — | 可编辑 |
+
 ## 技术规格与输出限制
 
 截至 2026-10-18。实时列表：https://docs.beatra.ai/zh/docs/models
@@ -146,15 +161,15 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ### AI播客配音可以制作什么？
 
-它把已有文章、笔记、大纲和定稿整理成适合聆听的单人播客单集，包含主播音色、自然节奏、清晰读音和MP3单集音频。
+单人播客单集。它把已有文章、笔记、大纲和讲稿整理成适合聆听的单集，主播音色统一、节奏自然、读音清晰，输出 MP3 单集音频。
 
 ### 系列节目可以延续同一主播音色吗？
 
-可以。先为节目选择主播方向，后续单集可以沿用音色、语言、表达设置、开场、收尾和读音记录。
+可以。音色、语言、表达设置、开场、收尾和读音记录都作为节目的主播设定，后续单集直接沿用。
 
 ### 哪些内容适合做成播客单集？
 
-文章、公众号长文、研究笔记、专业解说、节目大纲和定稿都适合作为整理成播客单集的起点。
+文章、公众号长文、研究笔记、专业解说、节目大纲和写好的讲稿，都适合整理成播客单集。
 
 ## 更新与安全
 
@@ -164,7 +179,9 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ## 许可证
 
-[MIT-0](LICENSE)：可自由使用、修改和再分发，包括商用，无需署名；与这些 skill 在 ClawHub 上的条款一致。
+本仓库的 Skill 文件（`SKILL.md`、参考文档和脚本）与本 README 采用 [MIT-0](LICENSE) 许可：可自由使用、修改和再分发，包括商用，无需署名。
+
+内容生成在 Beatra 云端完成，适用 [Beatra 服务条款](https://www.beatra.cn/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill)。
 
 ## 相关链接
 

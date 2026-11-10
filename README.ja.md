@@ -62,6 +62,12 @@ Gemini CLI 拡張機能として：
 gemini extensions install https://github.com/beatra-ai/ai-podcast-voiceover-skill
 ```
 
+Antigravity CLI プラグインとして：
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-podcast-voiceover-skill
+```
+
 GitHub CLI を使う場合：
 
 ```bash
@@ -106,6 +112,15 @@ Your takeaway: next Monday, write down one Friday deliverable, and tell one frie
 That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
+## 入力と出力
+
+| | 種類 | 形式 | 仕様 |
+| --- | --- | --- | --- |
+| **入力** | テキスト：記事、メモ、完成台本 | — | — |
+| **出力** | 音声：同じホストのボイスによる一人語りのエピソード | MP3 | 40 言語 |
+| **出力** | 音声：BGM（任意） | MP3 | 1 リクエストにつき 1 本 |
+| **出力** | テキスト：聴きやすく整えたエピソード台本 | — | 編集可能 |
+
 ## 技術仕様と出力上限
 
 2026-10-18 時点。最新の一覧：https://docs.beatra.ai/ja/docs/models
@@ -137,11 +152,11 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ### AIポッドキャスト音声制作では何を作れますか？
 
-手元の記事、メモ、構成、完成台本を、選んだホストの声、自然な話す速さ、明快な読み方、MP3エピソード音声を備えた一人語りポッドキャストに仕上げます。
+一人語りのポッドキャストです。手元の記事、メモ、構成、完成台本を、同じホストのボイス、自然な話す速さ、明快な読み方で、MP3 のエピソード音声に仕上げます。
 
-### シリーズで同じホストの声を生かせますか？
+### シリーズで同じホストのボイスを使えますか？
 
-はい。番組のホスト方向を選び、後続のエピソードでも声、言語、話し方の設定、導入、締め、読み方の記録を生かせます。
+はい。ボイス、言語、話し方、導入、締め、読み方のメモを番組のホスト設定としてまとめ、後のエピソードでも使えます。
 
 ### どのような材料がエピソード作りに向いていますか？
 
@@ -155,7 +170,9 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ## ライセンス
 
-[MIT-0](LICENSE)：商用を含め、自由に使用・改変・再配布できます。クレジット表記は不要です。ClawHub 上のこれらのスキルと同じ条件です。
+このリポジトリのスキルファイル（`SKILL.md`、リファレンス、スクリプト）とこの README は [MIT-0](LICENSE) で提供しています。商用を含め、自由に使用・改変・再配布でき、クレジット表記は不要です。
+
+生成は Beatra のクラウドサービスで行われ、[Beatra 利用規約](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill)が適用されます。
 
 ## リンク
 

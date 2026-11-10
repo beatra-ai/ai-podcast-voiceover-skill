@@ -11,5 +11,20 @@
   "homepage": "https://beatra.ai/skills/ai-podcast-voiceover",
   "repository": "https://github.com/beatra-ai/ai-podcast-voiceover-skill",
   "license": "MIT-0",
-  "icon": "./assets/icon.png"
+  "keywords": [
+    "AI podcast voice generator",
+    "podcast voiceover AI",
+    "text to speech podcast",
+    "article to podcast audio",
+    "AI podcast narration",
+    "solo podcast voice",
+    "podcast script to audio",
+    "consistent podcast host voice",
+    "podcast MP3"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://docs.beatra.ai",
+  "supportUrl": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+  "privacyPolicyUrl": "https://beatra.ai/privacy",
+  "termsOfServiceUrl": "https://beatra.ai/terms"
 }

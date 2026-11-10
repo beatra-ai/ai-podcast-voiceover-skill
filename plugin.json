@@ -10,6 +10,17 @@
   "homepage": "https://beatra.ai/skills/ai-podcast-voiceover",
   "repository": "https://github.com/beatra-ai/ai-podcast-voiceover-skill",
   "license": "MIT-0",
+  "keywords": [
+    "AI podcast voice generator",
+    "podcast voiceover AI",
+    "text to speech podcast",
+    "article to podcast audio",
+    "AI podcast narration",
+    "solo podcast voice",
+    "podcast script to audio",
+    "consistent podcast host voice",
+    "podcast MP3"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
@@ -19,6 +30,13 @@
         "developerName": "Beatra AI",
         "category": "Creativity",
         "websiteURL": "https://beatra.ai/skills/ai-podcast-voiceover",
+        "supportURL": "https://github.com/beatra-ai/.github/blob/main/SUPPORT.md",
+        "privacyPolicyURL": "https://beatra.ai/privacy",
+        "termsOfServiceURL": "https://beatra.ai/terms",
+        "defaultPrompt": [
+          "Use AI Podcast Voiceover to turn my balcony gardening article into a solo episode. Article attached; relaxed host voice, MP3."
+        ],
+        "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"
       }
     }

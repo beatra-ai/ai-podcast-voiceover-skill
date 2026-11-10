@@ -62,6 +62,12 @@ As a Gemini CLI extension:
 gemini extensions install https://github.com/beatra-ai/ai-podcast-voiceover-skill
 ```
 
+As an Antigravity CLI plugin:
+
+```bash
+agy plugin install https://github.com/beatra-ai/ai-podcast-voiceover-skill
+```
+
 With the GitHub CLI:
 
 ```bash
@@ -108,6 +114,15 @@ Your takeaway: next Monday, write down one Friday deliverable, and tell one frie
 That's it for today. Keep it small, keep it shipping. See you next week.
 ```
 
+## Inputs and outputs
+
+| | Type | Formats | Specifications |
+| --- | --- | --- | --- |
+| **Input** | Text — Article, notes, or finished script | — | — |
+| **Output** | Audio — Solo podcast episode read by one host voice | MP3 | 40 languages |
+| **Output** | Audio — Background music (optional) | MP3 | 1 audio clip per request |
+| **Output** | Text — Speakable episode script | — | editable |
+
 ## Technical Specifications & Output Limits
 
 As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
@@ -148,11 +163,11 @@ As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 ### What can AI Podcast Voiceover create?
 
-It turns supplied articles, notes, outlines, and finished scripts into listener-friendly solo podcast episodes, with a selected host voice, natural pacing, clear pronunciation, and MP3 episode audio.
+Solo podcast episodes. It turns supplied articles, notes, outlines, and finished scripts into listener-friendly episodes with one consistent host voice, natural pacing, clear pronunciation, and MP3 episode audio.
 
 ### Can I keep one host voice across a series?
 
-Yes. Choose a host direction for the show and reuse its voice, language, delivery settings, opener, closer, and pronunciation notes as later episodes are prepared.
+Yes. The voice, language, delivery settings, opener, closer, and pronunciation notes are kept as the show's host setup and reused in later episodes.
 
 ### What material works well for a podcast episode?
 
@@ -167,9 +182,10 @@ Details: `references/updates-and-security.md` inside the skill.
 
 ## License
 
-[MIT-0](LICENSE) — free to use, modify, and redistribute, including
-commercially. No attribution required. Same terms as these skills carry on
-ClawHub.
+The skill files in this repository (`SKILL.md`, references, and scripts) and this README are licensed under
+[MIT-0](LICENSE): free to use, modify, and redistribute, including commercially, with no attribution required.
+
+Media generation runs on Beatra's cloud service under the [Beatra Terms of Service](https://beatra.ai/terms?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill).
 
 ## Links
 
