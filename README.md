@@ -12,7 +12,7 @@ Turn an article, notes, or a finished script into a solo podcast episode with a 
 | Question | Answer |
 | --- | --- |
 | **What it does** | Turn an article, notes, or finished script into a listenable solo podcast episode with a consistent host voice, natural pacing, pronunciation control, and MP3 delivery. |
-| **Models** | MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Suno 6, MiniMax Music 3.0 |
+| **Models** | MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4, Suno 6, MiniMax Music 3.0 |
 | **Requirements** | Python 3.10+ and an agent that loads `SKILL.md` |
 | **Cost** | Free to install. Each render uses credits on your Beatra account, and paid steps run only when you ask for that exact render or approve its card. |
 | **Works with** | Claude Code, Cursor, Codex, Windsurf, Cline, OpenClaw |
@@ -84,6 +84,8 @@ Or paste this into your agent:
 Install the ai-podcast-voiceover skill from https://github.com/beatra-ai/ai-podcast-voiceover-skill (folder skills/ai-podcast-voiceover), then follow its SKILL.md to connect my Beatra account.
 ```
 
+Tested in clean-room CI: Antigravity CLI (2026-11-09).
+
 ## Examples
 
 <p align="center"><img src="assets/cover.webp" width="800" alt="Cover art for The Small Studio Show, a fictional solo podcast about shipping side projects. AI-generated with Beatra."></p>
@@ -125,10 +127,10 @@ That's it for today. Keep it small, keep it shipping. See you next week.
 
 ## Technical Specifications & Output Limits
 
-As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
+As of 2026-11-14. Live list: https://docs.beatra.ai/en/docs/models
 
 - **Uploads** — up to 100 MB per file; the per-model input limits below also apply
-- **Text to speech** — 2 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo); FLAC, MP3, OPUS, PCM, WAV; 40 languages; sample rates 8, 16, 22.05, 24, 32, 44.1 kHz; up to 50000 characters per request
+- **Text to speech** — 5 models (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4); FLAC, MP3, OPUS, PCM, WAV; 40 languages; sample rates 8, 16, 22.05, 24, 32, 44.1 kHz; up to 50000 characters per request
   - Languages (ISO 639 codes): zh, yue, en, es, fr, ru, de, pt, ar, it, ja, ko, id, vi, tr, nl, uk, th, pl, ro, el, cs, fi, hi, bg, da, he, ms, fa, sk, sv, hr, fil, hu, no, sl, ca, nn, ta, af
 - **Text to music** — 2 models (Suno 6, MiniMax Music 3.0); MP3
   - Suno 6: prompt up to 500, lyrics up to 5000, title up to 80 characters
@@ -139,7 +141,7 @@ As of 2026-10-18. Live list: https://docs.beatra.ai/en/docs/models
 
 ## Why use Beatra instead of calling model APIs directly
 
-- **One account for every model this skill uses** — Text to speech 2; Text to music 2; Reference audio to music 2 (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Suno 6, MiniMax Music 3.0) (as of 2026-10-18), behind one Beatra sign-in; no keys from individual model providers to manage.
+- **One account for every model this skill uses** — Text to speech 5; Text to music 2; Reference audio to music 2 (MiniMax Speech 2.8 HD, MiniMax Speech 2.8 Turbo, Doubao Seed TTS 2.0, ElevenLabs v4 Turbo, ElevenLabs v4, Suno 6, MiniMax Music 3.0) (as of 2026-11-14), behind one Beatra sign-in; no keys from individual model providers to manage.
 - **You decide what gets paid for** — Paid renders run only when you ask for that exact render or approve its card, which shows the live credit estimate.
 - **Direction before rendering** — the skill plans, directs, and reviews the work, then renders it on Beatra.
 - **Files you can verify** — every file under `skills/` matches the release archive on cdn.beatra.ai byte for byte, checked by SHA-256 before each push.
@@ -189,6 +191,7 @@ Media generation runs on Beatra's cloud service under the [Beatra Terms of Servi
 
 ## Links
 
+- Skill page — https://beatra.ai/skills/ai-podcast-voiceover?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill
 - Website — https://beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill
 - Docs — https://docs.beatra.ai?utm_source=github&utm_medium=flagship&utm_campaign=ai-podcast-voiceover-skill
 - Console — https://console.beatra.ai
