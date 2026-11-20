@@ -23,7 +23,7 @@
 
 | Skill | Entry point | Version |
 | --- | --- | --- |
-| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.2.9 |
+| [`ai-podcast-voiceover`](skills/ai-podcast-voiceover) | [SKILL.md](skills/ai-podcast-voiceover/SKILL.md) | 0.3.1 |
 
 このリポジトリは [beatra-ai/beatra-skills](https://github.com/beatra-ai/beatra-skills/tree/main/skills/ai-podcast-voiceover) から自動的に公開されています。問題の報告はそちらへお願いします。
 
